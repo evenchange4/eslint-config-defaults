@@ -12,14 +12,18 @@ var strict = require("../../rules/eslint/strict/walmart.js");
 var style = require("../../rules/eslint/style/walmart.js");
 var variables = require("../../rules/eslint/variables/walmart.js");
 
+// Plugins
+var filenames = require("../../rules/react/walmart.js");
+
 var defaults = {
-  "env": {},
   "ecmaFeatures": {},
+  "env": {},
   "globals": {
     "require": false,
     "module": false,
     "process": false
   },
+  "plugins": [],
   "rules": {}
 };
 
@@ -32,5 +36,6 @@ module.exports = _.merge(
   node,
   strict,
   style,
-  variables
+  variables,
+  filenames
 );
