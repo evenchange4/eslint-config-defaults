@@ -1,0 +1,3 @@
+---
+extends:
+  - "./configurations/walmart/es5.js"
